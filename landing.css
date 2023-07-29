@@ -1,0 +1,26 @@
+html,
+body {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    font-style: normal;
+}
+
+.topBar {
+    background: #F4F3F8 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #00000029;
+    opacity: 0.95;
+}
+
+.topBar__logoTopWiwo {
+    width: 179px;
+    height: 49px;
+    opacity: 1;
+}
+
+.firtsDv__textoDos {
+    width: 30%;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-left: 150px;
+}
