@@ -1,0 +1,555 @@
+.main {
+  display: flex;
+  margin-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.main__hero {
+  margin: -10px;
+  width: 100%;
+}
+
+.main__hero-container {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../assets/img/team-image-mobile--test4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__hero-title--container {
+  margin: -30px 90px 0 15px;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__hero-title {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 25px;
+}
+
+.main__hero-plugs--container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 40%;
+  width: 100%;
+  align-items: end;
+  justify-content: center;
+  background-image: url("../assets/img/team-image-hover.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__hero-plugs--container--left {
+  grid-column: span 3;
+}
+
+.main__hero-plugs--container--right {
+  grid-column: 5 / span 3;
+}
+
+.main__hero--buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: -18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.main__hero--button-left {
+  background-color: #9515f1;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.main__hero--button-right {
+  background-color: #a42daa;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/*            register            */
+
+.main__hero--container--register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 10px 20px 10px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main__register--title {
+  color: #9515f1;
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 20px;
+}
+
+.main__register--form {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.main__register--form input {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  background-color: #f4f3f8;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.main__register--button {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #9515f1, #a42daa);
+  color: #ffffff;
+}
+
+/*       Beneficios        */
+
+.beneficios__banner {
+  width: 100%;
+  height: 50vh;
+  overflow-x: hidden;
+  margin-bottom: 15px;
+}
+
+.beneficios__banner img {
+  position: absolute;
+  width: 90%;
+}
+.beneficios__banner--container-left img {
+  right: 30%;
+}
+.beneficios__banner--container-right img {
+  left: 30%;
+  margin-top: 50px;
+}
+
+.beneficios__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
+.beneficios__container--title {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.beneficios__container li {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.beneficios__container svg {
+  width: 2rem;
+  height: 2rem;
+  color: #9515f1;
+}
+
+.beneficios__container h4 {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 16px;
+}
+
+.beneficios__container p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #000000;
+}
+
+/*      Opiniones       */
+
+.opiniones__container {
+  margin-top: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.opiniones__title {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.opiniones__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+  padding: 15px;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.opiniones__card--container-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.opiniones__card--container-quotes {
+  height: 18vh;
+  display: flex;
+  align-items: flex-start;
+}
+.opiniones__card--container-quotes span {
+  font-size: 50px;
+  color: #9515f1;
+}
+.opiniones__card--article {
+  font-size: 14px;
+  font-style: italic;
+}
+.opiniones__card--author {
+  font-size: 15px;
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  color: #9515f1;
+}
+
+.opiniones__card .mySlice .fade .opiniones__container-slice {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+.mySlice {
+  display: none;
+}
+
+.dot,
+.dotCard {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover,
+.activeCard,
+.dotCard:hover {
+  background-color: #9515f1;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*      contacto      */
+#contacto {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.contacto__form--container {
+}
+.contacto__form--title {
+  width: 100%;
+  display: inline-block;
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 15px;
+  padding-right: 30px;
+}
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contacto__form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f4f3f8;
+  padding: 10px;
+}
+.contacto__form textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #f4f3f8;
+  padding: 10px;
+  border: none;
+}
+.contacto__form--button {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #9515f1, #a42daa);
+  color: #ffffff;
+}
+
+.comoUsar--title {
+  padding: 20px;
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 18px;
+}
+
+.comoUsar__Card--container {
+  width: 100%;
+  display: flex;
+}
+.comoUsar__Card--left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+}
+
+.comoUsar__Card--left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: -20px;
+}
+
+.comoUsar__Card--right {
+  width: 70%;
+  padding: 5px 15px;
+}
+.comoUsar__Card--right h4 {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  font-size: 16px;
+  margin: 10px 0px 10px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.comoUsar__Card--right p {
+  font-family: "ITC Avant Garde Gothic Std Medium";
+  font-size: 14px;
+  margin: 10px 0px 10px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.card {
+  display: none;
+}
+
+/*      queries       */
+
+@media screen and (min-width: 321px) {
+  .beneficios__banner {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .main__hero-container {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../assets/img/team-image-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__hero-title--container {
+    width: 50%;
+  }
+
+  .main__hero-plugs--container img {
+    max-width: 210px;
+  }
+  .beneficios__banner--image {
+    max-width: 365px;
+  }
+  .beneficios__banner--container-right img {
+    left: 40%;
+  }
+  .beneficios__banner--container-left img {
+    right: 40%;
+  }
+  .main__hero-plugs--container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent url("../assets/img/team-image-hover.svg") 0% 0%
+      no-repeat padding-box;
+  }
+  .main__hero-plugs--container--left {
+    margin-top: -50px;
+  }
+  .main__hero-plugs--container--right {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main__hero-title--container {
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 30rem;
+  }
+  .main__hero-title {
+    font-size: 2rem;
+    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+  }
+  .main__hero-plugs--container {
+    margin-top: 60px;
+  }
+
+  .main__hero-plugs--container--left {
+    margin-top: -25px;
+  }
+  .main__hero-plugs--container--right {
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main__hero-title--container {
+    margin-top: 5%;
+    margin-left: 7%;
+    max-width: 30rem;
+  }
+  .main__hero-title {
+    font-size: 3rem;
+    padding: 0 25px 0 25px;
+    margin-bottom: 20px;
+  }
+  .main__hero-text {
+    font-size: 1.2rem;
+    padding: 0 25px 0 25px;
+    margin-bottom: 30px;
+  }
+  .main__hero-plugs--container {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+    width: 100%;
+  }
+  .main__hero-plugs--container img {
+    max-width: 250px;
+  }
+  .main__hero--buttons {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  .main__hero--container--register {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 310px) and (min-height: 650px) {
+  .main__hero-plugs--container {
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+  }
+  .main__hero--buttons {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  .beneficios__banner {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 650px) {
+  .main__hero-plugs--container {
+    margin-top: 0px;
+    position: absolute;
+    bottom: -7%;
+    z-index: 1;
+    width: 60%;
+    right: 0;
+  }
+  .main__hero-container {
+    height: 100vh;
+  }
+  .main__hero-title--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main__hero-plugs--container img {
+    max-width: 230px;
+    position: absolute;
+    bottom: 0;
+  }
+  .main__hero-plugs--container--plug {
+    left: 10%;
+  }
+
+  .main__hero--container--register {
+    width: 40%;
+    max-width: 450px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    z-index: 2;
+  }
+  .main__hero--buttons {
+    position: absolute;
+    width: 60%;
+    z-index: 2;
+    right: 0;
+  }
+  .beneficios__banner {
+    z-index: 2;
+  }
+}

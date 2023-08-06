@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-style: normal;
+  min-height: 100vh;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "ITC Avant Garde Gothic Std Book";
+}
+
+button {
+  border: none;
+}
+
+.desktop {
+  display: none;
+}

@@ -1,31 +1,417 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
 
-<head>
-    <title>Landing wiwo</title>
-    <link href="http://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./landing.css">
-</head>
-
-<body>
-    <div class="w-screen">
-        <div class="h-24 flex flex-row items-center w-screen topBar">
-            <img src="./assets/img/logoTopbar.svg" alt="imgLogoWiwo" class="topBar__logoTopWiwo" />
-        </div>
-        <div class="static w-screen">
-            <img src="./assets/img/slide 1.png" alt="imgSlideTrabajadores" class="-mt-12" />
-            <div class="absolute top-24 flex flex-col w-full">
-                <p class="font-black 2xl:mt-32 2xl:ml-24 2xl:w-1/3 2xl:text-7xl md:w-2/5 md:ml-16 md:text-5xl sm:mt-32">Somos el Tinder del empleo.</p>
-                <p class="w-1/3 text-xl -mt-0 2xl:ml-24 md:w-3/6 md:ml-16">Conectamos empleados y empleadores generando</p>
-                <p class="w-1/3 text-xl -mt-0 2xl:ml-24 md:w-3/6 md:ml-16">oportunidades y facilitando una conexión inmediata.</p>
+    <title>Wiwo</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container--menuBurguer mobile">
+        <span id="bars1" class="menuBurguer__line1"></span>
+        <span id="bars2" class="menuBurguer__line2"></span>
+        <span id="bars3" class="menuBurguer__line3"></span>
+      </div>
+      <!-- todo Hacer el menu para desktop  -->
+      <nav class="header__container--menu desktop">
+        <ul>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#comoUsar">Como usar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__container--logo">
+        <img src="./assets/img/logoTopbar.svg" alt="logo" />
+      </div>
+      <nav class="mobile header__navbar">
+        <ul class="header__navbar--items">
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#comoUsar">Cómo usar wiwo</a></li>
+          <li><a href="#contacto">Contáctano</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__hero">
+        <div class="main__hero-container">
+          <div class="main__hero-title--container">
+            <h1 class="main__hero-title">Somos el Tinder del empleo.</h1>
+            <p class="main__hero-text desktop">
+              Conectamos empleados y empleadores generando oportunidades y
+              facilitando una conexión inmediata.
+            </p>
+          </div>
+          <div class="main__hero-plugs--container">
+            <div class="main__hero-plugs--container--left">
+              <img
+                src="./assets/img/plug.svg"
+                alt="imagen de un conector macho"
+                class="main__hero-plugs--container--plug"
+              />
             </div>
+            <div class="main__hero-plugs--container--right">
+              <img
+                src="./assets/img/plugger.svg"
+                alt="imagen de un conector hembra"
+                class="main__hero-plugs--container--plugger"
+              />
+            </div>
+          </div>
         </div>
-        <div id="idWImgWiwo" class="relative md:right-20">
-            <img src="./assets/img/lso_grande_background.svg" alt="imgWiwoManos" class="w-2/4 mt-40" />
-            <img src="./assets/img/Porque_WIWO_1.png" alt="imgXQWiwo" class="absolute -top-52" />
-            <img src="./assets/img/Porque_WIWO_2.png" alt="imgXQWiwo2" class="absolute 2xl:-top-2 ml-96 md:-top-52" />
+        <div class="main__hero--buttons">
+          <div class="main__hero--button-left">Busco trabajo</div>
+          <div class="main__hero--button-right">Ofrezco trabajo</div>
         </div>
-    </div>
-</body>
-
+        <div class="main__hero--container--register">
+          <h2 class="main__register--title">Registrate</h2>
+          <form action="" class="main__register--form">
+            <input type="text" placeholder="Nombre y Apellido" />
+            <input type="email" placeholder="Correo electrónico" />
+            <input type="tel" placeholder="Celular" />
+            <button type="submit" class="main__register--button">
+              Registrate
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="beneficios__banner">
+        <div class="beneficios__banner--container-left">
+          <img
+            src="./assets/img/cellphone-1.png"
+            alt="Banner de la app de wiwo"
+            class="beneficios__banner--image"
+          />
+        </div>
+        <div class="beneficios__banner--container-right">
+          <img
+            src="./assets/img/cellphone-2.png"
+            alt="Banner de la app de wiwo"
+            class="beneficios__banner--image"
+          />
+        </div>
+      </section>
+      <section id="beneficios" class="beneficios__container">
+        <h3 class="beneficios__container--title">¿Porque WIWO?</h3>
+        <ul>
+          <li class="beneficios__comunicate--container">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="beneficios__comunicate--icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Comunìcate</h4>
+              <p>
+                Tenemos un chat para que te comuniques en instantes, realiza
+                video llamadas desde donde quiera que estés.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Seguridad</h4>
+              <p>
+                ¡En Wiwo verificamos la veracidad de las ofertas y la identidad
+                de los empleados para que no tengas problemas al contratar!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Conectividad</h4>
+              <p>
+                ¡Conéctate desde cualquier lugar para conseguir tu próximo
+                empleo o postula alguna vacante!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Visibilidad</h4>
+              <p>
+                ¡Miles de vacantes de empleo y empleados a tan solo un clic!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Descarga tu hoja de vida</h4>
+              <p>
+                En WIWO hacemos tu hoja de vida para que solo la tengas que
+                descargar.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="opiniones" class="opiniones-container">
+        <h3 class="opiniones__title">¿Que dice la gente de WIWO ?</h3>
+        <div class="opiniones__container-slice">
+          <div class="opiniones__card mySlice fade">
+            <div class="opiniones__card--container-quotes">
+              <span>”</span>
+            </div>
+            <div class="opiniones__card--container-text">
+              <article class="opiniones__card--article">
+                Una app increíble, me ha ayudado a encontrar fácilmente los
+                candidatos para mi nuevo emprendimiento
+              </article>
+              <h5 class="opiniones__card--author">Pedro Gómez</h5>
+            </div>
+          </div>
+          <div class="opiniones__card mySlice fade slide">
+            <div class="opiniones__card--container-quotes">
+              <span>”</span>
+            </div>
+            <div class="opiniones__card--container-text">
+              <article class="opiniones__card--article">
+                Una app increíble, me ha ayudado a encontrar fácilmente los
+                candidatos para mi nuevo emprendimiento
+              </article>
+              <h5 class="opiniones__card--author">Pedro Gómez</h5>
+            </div>
+          </div>
+          <div class="opiniones__card mySlice fade">
+            <div class="opiniones__card--container-quotes">
+              <span>”</span>
+            </div>
+            <div class="opiniones__card--container-text">
+              <article class="opiniones__card--article">
+                Una app increíble, me ha ayudado a encontrar fácilmente los
+                candidatos para mi nuevo emprendimiento
+              </article>
+              <h5 class="opiniones__card--author">Pedro Gómez</h5>
+            </div>
+          </div>
+          <div class="opiniones__card mySlice fade">
+            <div class="opiniones__card--container-quotes">
+              <span>”</span>
+            </div>
+            <div class="opiniones__card--container-text">
+              <article class="opiniones__card--article">
+                Una app increíble, me ha ayudado a encontrar fácilmente los
+                candidatos para mi nuevo emprendimiento
+              </article>
+              <h5 class="opiniones__card--author">Pedro Gómez</h5>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin: 20px 0">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </section>
+      <section id="comoUsar">
+        <h3 class="comoUsar--title">¿Como utilizo WIWO ?</h3>
+        <div class="comoUsar__Card--container fade card">
+          <div class="comoUsar__Card--left">
+            <img
+              src="./assets/img/cellphone-1.png"
+              alt="imagen de la aplicacion de wiwo"
+            />
+          </div>
+          <div class="comoUsar__Card--right">
+            <span class="desktop comoUsar__Card--enum">1</span>
+            <h4>¿Búscas un empleo o un empleado?</h4>
+            <p>
+              Elige tu perfil de búsqueda, no te preocupes si más tarde quieres
+              cambiar de perfil, dentro de la app podrás acceder a ambas
+              búsquedas.
+            </p>
+          </div>
+        </div>
+        <div class="comoUsar__Card--container fade card">
+          <div class="comoUsar__Card--left">
+            <img
+              src="./assets/img/cellphone-1.png"
+              alt="imagen de la aplicacion de wiwo"
+            />
+          </div>
+          <div class="comoUsar__Card--right">
+            <span class="desktop comoUsar__Card--enum">2</span>
+            <h4>Regístrate</h4>
+            <p>
+              Regístrate fácilmente, puede utilizar tus redes para cargar tus
+              datos de perfil y avanzar con el registro más rápidamente
+            </p>
+          </div>
+        </div>
+        <div class="comoUsar__Card--container fade card">
+          <div class="comoUsar__Card--left">
+            <img
+              src="./assets/img/cellphone-2.png"
+              alt="imagen de la aplicacion de wiwo"
+            />
+          </div>
+          <div class="comoUsar__Card--right">
+            <span class="comoUsar__Card--enum desktop">3</span>
+            <h4>Comienza a buscar</h4>
+            <p>
+              Comienza a buscar deslizando sobre las publicaciones, el empleo o
+              el empleado a tu medida.
+            </p>
+          </div>
+        </div>
+        <div class="comoUsar__Card--container fade card">
+          <div class="comoUsar__Card--left">
+            <img
+              src="./assets/img/cellphone-2.png"
+              alt="imagen de la aplicacion de wiwo"
+            />
+          </div>
+          <div class="comoUsar__Card--right">
+            <span class="desktop comoUsar__Card--enum">4</span>
+            <h4>¡Conécta!</h4>
+            <p>
+              Conecta y comienza a chatear para confirmar tu entrevista laboral.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center; margin: 20px 0">
+          <span class="dotCard" onclick="currentCard(1)"></span>
+          <span class="dotCard" onclick="currentCard(2)"></span>
+          <span class="dotCard" onclick="currentCard(3)"></span>
+          <span class="dotCard" onclick="currentCard(4)"></span>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="contacto__form--container">
+          <div class="contacto__form--title">
+            <h3>Contáctate con nosotros</h3>
+          </div>
+          <form action="" class="contacto__form">
+            <input type="text" placeholder="Nombre y Apellido" />
+            <input type="text" placeholder="Email" />
+            <textarea
+              name="mensaje"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button type="submit" class="contacto__form--button">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo--container">
+        <img src="./assets/img/logoTopbar.svg" alt="logo de wiwo" />
+        <p>Visita nuestro centro de ayuda</p>
+      </div>
+      <div class="footer__apps-logo--container">
+        <img src="./assets/img/AppStore.png" alt="Logo de App store" />
+        <img src="./assets/img/Google Play.png" alt="Logo de Google play" />
+      </div>
+      <div class="footer__social--container">
+        <h5>@2020 Wiwo</h5>
+        <div class="footer__social-logos--container">
+          <img
+            src="./assets/img/facebook-svgrepo-com.svg"
+            alt="Logo de facebook"
+          />
+          <!-- //instagram  -->
+          <img
+            src="./assets/img/instagram-fill-svgrepo-com.svg"
+            alt="Logo de instagram"
+          />
+          <!-- linkedin -->
+          <img
+            src="./assets/img/linkedin-svgrepo-com.svg"
+            alt="logo de LinkedIn"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

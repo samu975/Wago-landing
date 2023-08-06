@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Book";
+  src: url("../assets/fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Book.otf");
+}
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Demi";
+  src: url("../assets/fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Demi.otf");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Bold";
+  src: url("../assets/fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Bold.otf");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Medium";
+  src: url("../assets/fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf");
+}
