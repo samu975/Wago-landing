@@ -292,8 +292,7 @@
   background-color: #ffffff;
   padding: 20px;
 }
-.contacto__form--container {
-}
+
 .contacto__form--title {
   width: 100%;
   display: inline-block;
@@ -432,6 +431,39 @@
   .main__hero-plugs--container--right {
     margin-top: -50px;
   }
+  #comoUsar {
+    padding: 0 40px 0 40px;
+  }
+
+  .comoUsar__Card--enum {
+    color: #9515f1;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: -100px;
+  }
+  .comoUsar--title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .comoUsar__Card--container {
+    height: 50vh;
+  }
+  .comoUsar__Card--left {
+    width: 50%;
+  }
+  .comoUsar__Card--right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .comoUsar__Card--right h4 {
+    font-size: 20px;
+  }
+  .comoUsar__Card--right p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -444,9 +476,6 @@
     font-size: 2rem;
     padding: 0 10px 0 10px;
     margin-bottom: 20px;
-  }
-  .main__hero-plugs--container {
-    margin-top: 60px;
   }
 
   .main__hero-plugs--container--left {
@@ -510,17 +539,43 @@
 }
 
 @media screen and (min-width: 1024px) and (min-height: 650px) {
+  h3 {
+    font-size: 30px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  article {
+    font-size: 16px !important;
+  }
+
   .main__hero-plugs--container {
     margin-top: 0px;
     position: absolute;
-    bottom: -7%;
+    bottom: -10%;
     z-index: 1;
-    width: 60%;
+    width: 100%;
     right: 0;
   }
+
   .main__hero-container {
     height: 100vh;
   }
+  .main__hero-plugs--container--left {
+    position: absolute;
+    left: 45%;
+  }
+  .main__hero-plugs--container--right {
+    position: absolute;
+    right: 25%;
+  }
+
   .main__hero-title--container {
     display: flex;
     flex-direction: column;
@@ -539,7 +594,8 @@
     width: 40%;
     max-width: 450px;
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
+    background-color: white;
     left: 5%;
     z-index: 2;
   }
@@ -551,5 +607,98 @@
   }
   .beneficios__banner {
     z-index: 2;
+  }
+
+  .comoUsar__Card--left img {
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 0;
+  }
+  .comoUsar__Card--right {
+    padding-right: 20%;
+  }
+  .beneficios__container--all {
+    width: 100%;
+    display: flex;
+  }
+  .beneficios__banner {
+    flex: 1;
+    display: flex;
+    background: url("../assets/img/lso_grande_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  .beneficios__banner img {
+    left: 15%;
+  }
+
+  .beneficios__banner--container-right img {
+    left: 25%;
+  }
+  .beneficios__container {
+    flex: 1;
+    padding-right: 80px;
+  }
+  .contacto__form--container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contacto {
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 100px;
+    background-image: url("../assets/img/2.png");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: left top;
+  }
+  .contacto__form--title {
+    width: 30%;
+  }
+  .contacto__form--title h3 {
+    padding: 0 20px;
+    line-break: strict;
+  }
+  .contacto__form {
+    width: 40%;
+    margin-right: 5%;
+  }
+  .contacto__form--button {
+    font-size: 16px;
+  }
+  #opiniones {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .opiniones__title {
+    margin: 40px 0;
+  }
+  .opiniones-container--all {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .opiniones__circle--image {
+    width: 30%;
+    background-image: url("../assets/img/circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .dots-and-cards {
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+  .dot,
+  .dotCard {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 650px) {
+  #contacto {
+    background-size: 45%;
   }
 }

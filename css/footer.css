@@ -43,3 +43,34 @@
   width: 30px;
   height: 30px;
 }
+
+@media screen and (min-width: 1024px) and (min-height: 650px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer__apps-logo--container {
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer__logo--container {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__apps-logo--container img {
+    width: 50%;
+    height: 50%;
+  }
+  .footer__social--container {
+    width: 30%;
+    padding: 0;
+    gap: 40px;
+  }
+  .footer__social--container h5 {
+    display: none;
+  }
+}
