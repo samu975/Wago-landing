@@ -491,8 +491,8 @@
     width: 50%;
   }
   .comoUsar__Card--left img {
-    width: 50%;
-    height: 100%;
+    width: 230px;
+    height: 350px;
   }
   .comoUsar__Card--right {
     display: flex;
@@ -527,10 +527,7 @@
   .main__hero-plugs--container--right {
     margin-top: -25px;
   }
-  .comoUsar__Card--left img {
-    width: 200px;
-    height: 100%;
-  }
+
   #card_1 {
     background-position: center;
   }
@@ -665,11 +662,6 @@
     z-index: 2;
   }
 
-  .comoUsar__Card--left img {
-    max-height: 300px;
-    max-width: 300px;
-    margin-right: 0;
-  }
   .comoUsar__Card--right {
     padding-right: 20%;
   }
@@ -754,19 +746,19 @@
   }
   #card_1 {
     width: 50%;
-    background-position: calc(50% + 150px);
+    background-position: calc(50% + 40px);
   }
   #card_2 {
     width: 50%;
-    background-position: calc(50% + 100px);
+    background-position: calc(50% + 20px);
   }
   #card_3 {
     width: 50%;
-    background-position: calc(50% + 70px);
+    background-position: calc(50%);
   }
   #card_4 {
     width: 50%;
-    background-position: calc(50% + 10px);
+    background-position: calc(50% - 40px);
   }
 }
 @media screen and (min-width: 1800px) and (min-height: 650px) {
