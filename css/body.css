@@ -105,7 +105,8 @@
   margin-top: 10px;
 }
 
-.main__register--form input {
+.main__register--form input,
+.main__register--form select {
   width: 100%;
   margin: 10px 0 10px 0;
   background-color: #f4f3f8;

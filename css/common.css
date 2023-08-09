@@ -33,7 +33,8 @@ img {
 }
 
 input,
-textarea {
+textarea,
+select {
   border: none;
   font-family: "ITC Avant Garde Gothic Std Book";
 }
