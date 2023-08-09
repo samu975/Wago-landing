@@ -72,9 +72,14 @@
         <div class="main__hero--container--register">
           <h2 class="main__register--title">Registrate</h2>
           <form action="" class="main__register--form">
-            <input type="text" placeholder="Nombre y Apellido" />
-            <input type="email" placeholder="Correo electrónico" />
+            <input type="text" placeholder="Nombre y Apellido" required />
+            <input type="email" placeholder="Correo electrónico" required />
             <input type="tel" placeholder="Celular" />
+            <select name="" id="" required>
+              <option value=""></option>
+              <option value="">Busco trabajo</option>
+              <option value="">Busco empleo</option>
+            </select>
             <button type="submit" class="main__register--button">
               Registrate
             </button>
@@ -377,8 +382,8 @@
             <h3>Contáctate con nosotros</h3>
           </div>
           <form action="" class="contacto__form">
-            <input type="text" placeholder="Nombre y Apellido" />
-            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Nombre y Apellido" required />
+            <input type="text" placeholder="Email" required />
             <textarea
               name="mensaje"
               id="message"
@@ -390,6 +395,15 @@
           </form>
         </div>
       </section>
+      <div class="global__aside-buttons desktop">
+        <a
+          href="https://walink.co/9302af"
+          target="_blank"
+          class="sticky-button"
+        >
+          <img src="./assets/img/wpp-icon.svg" alt="Icono de whatsapp" />
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__logo--container">
