@@ -68,7 +68,6 @@
   .footer__social--container {
     width: 30%;
     padding: 0;
-    gap: 40px;
   }
   .footer__social--container h5 {
     display: none;
