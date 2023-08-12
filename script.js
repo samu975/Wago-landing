@@ -61,7 +61,7 @@ showCard(cardIndex);
 
 setInterval(() => {
   plusCard(1);
-}, 7000);
+}, 700000);
 
 function plusCard(n) {
   showCard((cardIndex += n));
